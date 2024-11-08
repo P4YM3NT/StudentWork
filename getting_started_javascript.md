@@ -18,6 +18,8 @@ Welcome to the JavaScript Basics guide! This document is designed to help you le
 
 ---
 
+<br>
+
 ## 1. Introduction
 
 In this guide, you'll cover the basics of JavaScript specifically for back-end development with Node.js. Basic concepts in JavaScript are universal, but we’ll skip aspects focused on the browser and DOM manipulation at the moment.
@@ -92,6 +94,8 @@ var isActive = true;    // Function-scoped (legacy)
   console.log("Outside function:", isPublic); // ReferenceError: isPublic is not defined
 ```
 </details>
+
+<br>
 
 ---
 
@@ -197,6 +201,8 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
     console.log(typeof companyName, typeof companyAge, typeof isActive, typeof companyRevenue, typeof noValue, typeof companyDetails, typeof departments);
   ```
 </details>
+
+<br>
 
 ---
 
