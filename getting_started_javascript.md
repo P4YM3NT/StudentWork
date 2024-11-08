@@ -18,13 +18,13 @@ Welcome to the JavaScript Basics guide! This document is designed to help you le
 
 ---
 
-### Introduction
+## 1. Introduction
 
 In this guide, you'll cover the basics of JavaScript specifically for back-end development with Node.js. Basic concepts in JavaScript are universal, but we’ll skip aspects focused on the browser and DOM manipulation at the moment.
 
 ---
 
-## 1. Variables
+## 2. Variables
 
 Variables store data values that we can use and manipulate in our code. There are 3 different types that can be used `var`, `let`, `const`.
 
@@ -92,5 +92,34 @@ var isActive = true;    // Function-scoped (legacy)
 </details>
 
 ---
+
+## 3. Data Types
+
+JavaScript has several data types that can be classified into two categories: **primitive** and **non-primitive**. Primitive types are immutable and include `strings`, `numbers`, `booleans`, `undefined`, `null`. Non-primitive types (also known as reference types) include objects and arrays.
+
+#### Primitive Data Types
+
+1. **String**
+   - A sequence of characters used to represent text. Strings must be wrapped in quotes (`""` or `''`), and they can contain letters, numbers, spaces, and symbols.
+   - Example: `"Hello, world!"`, `'1234'`
+
+   ```javascript
+   const greeting = "Hello, world!"; // String
+
+2. **Number**
+   - Used for any type of number, including integers and floating-point numbers.
+   - Example: `42`, `3.14`, `-100`
+
+   ```javascript
+   const age = 30; // Number
+   const pi = 3.14; // Floating-point Number
+
+3. **Boolean**
+   - Represents a logical entity and can have only two values: true or false. Useful for conditional statements and logic.
+   - Example: `true`, `false`
+
+   ```javascript
+   const isMember = true; // Boolean
+
 
 
