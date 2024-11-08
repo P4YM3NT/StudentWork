@@ -194,3 +194,140 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
   ```
 </details>
 
+---
+
+## 4. Operators
+
+Operators in JavaScript are used to perform various operations on variables and values. Here’s a quick guide to the most commonly used operators:
+
+### Arithmetic Operators
+Arithmetic operators are used to perform `mathematical` calculations.
+
+1. **Addition (`+`)**: Adds two values.
+   ```javascript
+   let sum = 5 + 3; // Output: 8
+
+2. **Substraction (`-`)**: Subtracts one value from another.
+   ```javascript
+   let difference = 10 - 4; // Output: 6
+
+3. **Multiplication (`*`)**: Multiplies two values.
+   ```javascript
+   let product = 4 * 3; // Output: 12
+
+4. **Division (`/`)**: Divides one value by another.
+   ```javascript
+   let quotient = 12 / 3; // Output: 4
+
+5. **Modulus (`%`)**: Returns the remainder when one value is divided by another. Often used to check if a number is even or odd.
+   ```javascript
+   let remainder = 10 % 3; // Output: 1
+   // 10 : 3 would be 3,33.... but modulo count the rest of the positive divison 9:3 = 3 / rest is 1 to get 10
+   // 4 % 2 would be rest 0
+   // 5 % 2 would be rest 1
+
+### Assignment Operators
+Assignment operators `assign` values to variables.
+
+1. **Simple Assigment (`=`)**: Assigns a value to a variable.
+   ```javascript
+   let x = 10;
+
+2. **Addition Assigment (`+=`)**: Adds a value to the variable.
+   ```javascript
+   x += 5; // Equivalent to x = x + 5; x is now 15
+
+3. **Subtraction Assigment (`-=`)**: Subtracts a value from the variable.
+   ```javascript
+   x -= 3; // Equivalent to x = x - 3; x is now 12
+
+4. **Multiplication Assigment (`*=`)**: Multiplies the variable by a value.
+   ```javascript
+   x *= 2; // Equivalent to x = x * 2; x is now 24
+
+5. **Division Assigment (`/=`)**:  Divides the variable by a value.
+   ```javascript
+   x /= 6; // Equivalent to x = x / 6; x is now 4
+
+### Comparison Operators
+Comparison operators are used to compare values and return a boolean result `true` or `false`.
+
+1. **Equal (`==`)**: Checks if two values are equal (type conversion is allowed).
+   ```javascript
+   console.log(5 == "5"); // Output: true
+
+2. **Strict Equal (`===`)**: Checks if two values are equal and of the same type.
+   ```javascript
+   console.log(5 === "5"); // Output: false
+
+3. **Not Equal (`!=`)**: Checks if two values are not equal.
+   ```javascript
+   console.log(5 != 3); // Output: true
+
+4. **Strict Not Equal (`!==`)**: Checks if two values are not equal or not of the same type.
+   ```javascript
+   console.log(5 !== "5"); // true
+
+5. **Greater Than (`>`)**: Checks if the left value is greater than the right.
+   ```javascript
+   console.log(10 > 5); // true
+
+6. **Less Than (`<`)**: Checks if the left value is less than the right.
+   ```javascript
+   console.log(5 < 10); // true
+
+7. **Greater Than or Equal (`>=`)**: Checks if the left value is greater than or equal to the right.
+   ```javascript
+   console.log(10 >= 10); // true
+
+8. **Less Than or Equal (`<=`)**: Checks if the left value is less than or equal to the right.
+   ```javascript
+   console.log(5 <= 10); // true
+
+### Logical Operators
+Logical operators are used to combine multiple `boolean expressions`.
+
+1. **AND (`&&`)**: Returns true if both expressions are true.
+   ```javascript
+   console.log(true && false); // false
+
+2. **OR (`||`)**: Returns true if at least one expression is true.
+   ```javascript
+   console.log(true || false); // true
+
+3. **NOT (`!`)**: Inverts the value of an expression.
+   ```javascript
+   console.log(!true); // false
+   
+### Exercise 1: Simple Arithmetic Operations
+If you don't know how to log the `type`, google it. If you can't find anything, click on the hint.
+
+1. Declare two `variables`, a and b, and assign them `numeric values` of your choice.
+2. Perform and `log` the following operations using these variables above:
+    Addition
+    Subtraction
+    Multiplication
+    Division
+    Modulus (remainder)
+    Exponentiation (power)
+
+### Example Code
+
+<details>
+  <summary>Click to see the solution</summary>
+
+  ```javascript
+    // Example solution
+
+    let a = 8;
+    let b = 4;
+
+    console.log(a + b); // Addition
+    console.log(a - b); // Subtraction
+    console.log(a * b); // Multiplication
+    console.log(a / b); // Division
+    console.log(a % b); // Modulus
+    console.log(a ** b); // Exponentiation
+  ```
+</details>
+
