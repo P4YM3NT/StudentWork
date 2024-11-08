@@ -24,7 +24,7 @@ In this guide, you'll cover the basics of JavaScript specifically for back-end d
 
 ---
 
-### Variables
+## 1. Variables
 
 Variables store data values that we can use and manipulate in our code. There are 3 different types that can be used `var`, `let`, `const`.
 
@@ -40,7 +40,7 @@ Variables store data values that we can use and manipulate in our code. There ar
 - **Scope**:  Block-scoped, like `let`.
 - **Reassignment**: No, `const` variables cannot be reassigned after their initial declaration. However, if a `const` variable points to an object, properties of that object can still be modified.
 
-#### Syntax
+### Syntax
 ```javascript
 // Declaring variables
 let name = "John";      // Block-scoped
@@ -48,7 +48,7 @@ const age = 25;         // Block-scoped, immutable
 var isActive = true;    // Function-scoped (legacy)
 ```
 
-#### Exercise
+### Exercise
 
 1. Create a variable called `companyName` and assign it a string value of your choice.
 2. Declare a constant called `yearFounded` with a numeric value.
@@ -57,7 +57,7 @@ var isActive = true;    // Function-scoped (legacy)
 5. Inside an `if` block, try reassigning `companyLocation` to a different city and log the result both inside and outside the block.
 6. Declare a `var` variable called `isPublic` and assign it a boolean value (`true` or `false`). Test its scope by logging it inside and outside a function.
 
-#### Example Code
+### Example Code
 
 <details>
   <summary>Click to see the solution</summary>
