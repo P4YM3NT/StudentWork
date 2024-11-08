@@ -144,24 +144,28 @@ JavaScript has several data types that can be classified into two categories: **
    
    ```javascript
    const person = { name: "Alice", age: 30 }; // Object
-
+   ```
 2. **Array**
    - An array is an ordered list of values. Each value (element) has a numeric index, starting at 0. Arrays are also a type of object.
      
    ```javascript
    const colors = ["red", "green", "blue"]; // Array
-
+   ```
 ### Exercise
 
 1. Create variables of each type: string, number, boolean, undefined, null, object, and array.
 2. Log each variable to the console to observe its type and value.
 
 If you don't know how to log the type, google it. If you can't find anything click on the hint.
-<details>
-    <summary>Click for a hint</summary>
 
-    // to get the type of a variable, you can use the typeof operator. Example:
-    let test = 1;
-    console.log(typeof test);
-    
+<details>
+  <summary>Click to see the solution</summary>
+
+  ```javascript
+  // to get the type of a variable, you can use the typeof operator.
+
+  let test = 1;
+  console.log(typeof test);
+
+  ```
 </details>
