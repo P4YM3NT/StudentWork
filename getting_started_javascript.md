@@ -57,8 +57,6 @@ var isActive = true;    // Function-scoped (legacy)
 5. Inside an `if` block, try reassigning `companyLocation` to a different city and log the result both inside and outside the block.
 6. Declare a `var` variable called `isPublic` and assign it a boolean value (`true` or `false`). Test its scope by logging it inside and outside a function.
 
----
-
 #### Example Code
 
 <details>
@@ -92,3 +90,7 @@ var isActive = true;    // Function-scoped (legacy)
   console.log("Outside function:", isPublic); // ReferenceError: isPublic is not defined
 ```
 </details>
+
+---
+
+
