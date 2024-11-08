@@ -103,14 +103,12 @@ JavaScript has several data types that can be classified into two categories: **
    - A sequence of characters used to represent text. Strings must be wrapped in quotes (`""` or `''`), and they can contain letters, numbers, spaces, and symbols.
    - Example: `"Hello, world!"`, `'1234'`
 
-
    ```javascript
    const greeting = "Hello, world!"; // string
 
 2. **Number**
    - Used for any type of number, including integers and floating-point numbers.
    - Example: `42`, `3.14`, `-100`
-
 
    ```javascript
    const age = 30; // number
@@ -120,14 +118,12 @@ JavaScript has several data types that can be classified into two categories: **
    - Represents a logical entity and can have only two values: true or false. Useful for conditional statements and logic.
    - Example: `true`, `false`
 
-
    ```javascript
    const isMember = true; // boolean
 
 4. **Undefined**
    - A variable that has been declared but has not yet been assigned a value is automatically undefined.
    - Example: `undefined`
-
 
    ```javascript
    let score; // undefined
@@ -136,8 +132,20 @@ JavaScript has several data types that can be classified into two categories: **
    - Represents an explicitly empty or non-existent value. Unlike undefined, null is assigned intentionally.
    - Example: `null`
 
-
    ```javascript
    const emptyValue = null; // null
 
+#### Non-Primitive Data Types
+
+1. **Object**
+   - An object is a collection of key-value pairs. It can store multiple values and more complex structures. Objects are a fundamental part of JavaScript, and we will cover them in greater detail later.
+   
+   ```javascript
+   const person = { name: "Alice", age: 30 }; // Object
+
+2. **Array**
+   - An array is an ordered list of values. Each value (element) has a numeric index, starting at 0. Arrays are also a type of object.
+     
+   ```javascript
+   const colors = ["red", "green", "blue"]; // Array
 
