@@ -46,6 +46,7 @@ Variables store data values that we can use and manipulate in our code. There ar
 let name = "John";      // Block-scoped
 const age = 25;         // Block-scoped, immutable
 var isActive = true;    // Function-scoped (legacy)
+```
 
 #### Exercise
 
