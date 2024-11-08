@@ -160,7 +160,7 @@ If you don't know how to log the type, google it. If you can't find anything cli
 <details>
     <summary>Click for a hint</summary>
 
-    //to get the type of a variable, you can use the typeof operator. Example:
+    // to get the type of a variable, you can use the typeof operator. Example:
     let test = 1;
     console.log(typeof test);
     
