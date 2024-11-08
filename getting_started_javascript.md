@@ -151,15 +151,16 @@ JavaScript has several data types that can be classified into two categories: **
    ```javascript
    const colors = ["red", "green", "blue"]; // Array
    ```
+   
 ### Exercise
 
-1. Create variables of each type: string, number, boolean, undefined, null, object, and array.
-2. Log each variable to the console to observe its type and value.
+1. Create `variables` of each type: `string`, `number`, `boolean`, `undefined`, `null`, `object`, and `array`.
+2. Log each `variable` to the console to observe its `type` and `value`.
 
-If you don't know how to log the type, google it. If you can't find anything click on the hint.
+If you don't know how to log the `type`, google it. If you can't find anything, click on the hint.
 
 <details>
-  <summary>Click to see the solution</summary>
+  <summary>Click for a hint!</summary>
 
   ```javascript
   // to get the type of a variable, you can use the typeof operator.
@@ -169,3 +170,23 @@ If you don't know how to log the type, google it. If you can't find anything cli
 
   ```
 </details>
+
+### Example Code
+
+<details>
+  <summary>Click to see the solution</summary>
+
+  ```javascript
+    // Example solution
+    const companyName = "Tech Solutions"; // String
+    const companyAge = 10; // Number
+    const isActive = true; // Boolean
+    let companyRevenue; // Undefined
+    const noValue = null; // Null
+    const companyDetails = { name: "Tech Solutions", founded: 2010 }; // Object
+    const departments = ["HR", "Engineering", "Sales"]; // Array
+    
+    console.log(typeof companyName, typeof companyAge, typeof isActive, typeof companyRevenue, typeof noValue, typeof companyDetails, typeof departments);
+  ```
+</details>
+
