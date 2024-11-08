@@ -304,12 +304,12 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
 
 1. Declare two `variables`, a and b, and assign them `numeric values` of your choice.
 2. Perform and `log` the following operations using these variables above:
-    Addition
-    Subtraction
-    Multiplication
-    Division
-    Modulus (remainder)
-    Exponentiation (power)
+    - `Addition`
+    - `Subtraction`
+    - `Multiplication`
+    - `Division`
+    - `Modulus`
+    
 
 ### Example Code
 
@@ -327,7 +327,6 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
     console.log(a * b); // Multiplication
     console.log(a / b); // Division
     console.log(a % b); // Modulus
-    console.log(a ** b); // Exponentiation
   ```
 </details>
 
