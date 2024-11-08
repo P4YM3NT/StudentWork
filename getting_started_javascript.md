@@ -88,5 +88,5 @@ var isActive = true;    // Function-scoped (legacy)
       console.log("Inside function:", isPublic); // true
   }
   checkPublicStatus();
-  console.log("Outside function:", isPublic); // ReferenceError: isPublic is not defined
-<details>```
+  console.log("Outside function:", isPublic); // ReferenceError: isPublic is not defined```
+<details>
