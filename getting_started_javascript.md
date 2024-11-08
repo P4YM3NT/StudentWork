@@ -304,6 +304,8 @@ Logical operators are used to combine multiple `boolean expressions`.
 3. **NOT (`!`)**: Inverts the value of an expression.
    ```javascript
    console.log(!true); // false
+
+<br>
    
 ### Exercise 1: Simple Arithmetic Operations
 If you don't know how to log the `type`, google it. If you can't find anything, click on the hint.
@@ -335,4 +337,53 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
     console.log(a % b); // Modulus
   ```
 </details>
+
+<br>
+
+### Exercise 2: Modulus and Odd/Even Check
+
+1. Declare a `variable number` and assign it a `random` integer.
+2. Use the `modulus` operator (%) to check if the number is `even` or `odd`.
+
+    - `Addition`
+    - `Subtraction`
+    - `Multiplication`
+    - `Division`
+    - `Modulus`
+3. Log whether the number is `Even` or `Odd`.    
+
+### Example Code
+
+<details>
+  <summary>Click to see the solution</summary>
+
+  ```javascript
+    // Example solution
+
+    let a = 8;
+    let b = 4;
+
+    console.log(a + b); // Addition
+    console.log(a - b); // Subtraction
+    console.log(a * b); // Multiplication
+    console.log(a / b); // Division
+    console.log(a % b); // Modulus
+  ```
+</details>
+
+Exercise 2: Modulus and Odd/Even Check
+Declare a variable number and assign it a random integer.
+Use the modulus operator (%) to check if the number is even or odd.
+Log whether the number is "Even" or "Odd".
+Example Solution:
+
+javascript
+Code kopieren
+let number = 17;
+
+if (number % 2 === 0) {
+    console.log("Even");
+} else {
+    console.log("Odd");
+}
 
