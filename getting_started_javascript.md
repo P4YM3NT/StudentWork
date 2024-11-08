@@ -24,6 +24,8 @@ In this guide, you'll cover the basics of JavaScript specifically for back-end d
 
 ---
 
+<br>
+
 ## 2. Variables
 
 Variables store data values that we can use and manipulate in our code. There are 3 different types that can be used `var`, `let`, `const`.
@@ -92,6 +94,8 @@ var isActive = true;    // Function-scoped (legacy)
 </details>
 
 ---
+
+<br>
 
 ## 3. Data Types
 
@@ -195,6 +199,8 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
 </details>
 
 ---
+
+<br>
 
 ## 4. Operators
 
