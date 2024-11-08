@@ -153,11 +153,10 @@ JavaScript has several data types that can be classified into two categories: **
    ```
    
 ### Exercise
+If you don't know how to log the `type`, google it. If you can't find anything, click on the hint.
 
 1. Create `variables` of each type: `string`, `number`, `boolean`, `undefined`, `null`, `object`, and `array`.
 2. Log each `variable` to the console to observe its `type` and `value`.
-
-If you don't know how to log the `type`, google it. If you can't find anything, click on the hint.
 
 <details>
   <summary>Click for a hint!</summary>
