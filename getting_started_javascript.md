@@ -46,3 +46,47 @@ Variables store data values that we can use and manipulate in our code. There ar
 let name = "John";      // Block-scoped
 const age = 25;         // Block-scoped, immutable
 var isActive = true;    // Function-scoped (legacy)
+
+#### Exercise
+
+1. Create a variable called `companyName` and assign it a string value of your choice.
+2. Declare a constant called `yearFounded` with a numeric value.
+3. Try reassigning `yearFounded` and note what happens.
+4. Declare a `let` variable named `companyLocation` and assign it a string value representing a city.
+5. Inside an `if` block, try reassigning `companyLocation` to a different city and log the result both inside and outside the block.
+6. Declare a `var` variable called `isPublic` and assign it a boolean value (`true` or `false`). Test its scope by logging it inside and outside a function.
+
+---
+
+#### Example Code
+
+<details>
+  <summary>Click to see the solution</summary>
+
+  ```javascript
+  // Step 1
+  let companyName = "Tech Solutions";
+
+  // Step 2
+  const yearFounded = 2020;
+
+  // Step 3 - Attempting to reassign yearFounded
+  // yearFounded = 2021; // This will throw an error: "Assignment to constant variable."
+
+  // Step 4
+  let companyLocation = "New York";
+
+  if (true) {
+      companyLocation = "San Francisco";
+      console.log("Inside block:", companyLocation); // San Francisco
+  }
+  console.log("Outside block:", companyLocation); // San Francisco
+
+  // Step 6
+  function checkPublicStatus() {
+      var isPublic = true;
+      console.log("Inside function:", isPublic); // true
+  }
+  checkPublicStatus();
+  console.log("Outside function:", isPublic); // ReferenceError: isPublic is not defined
+<details>```
