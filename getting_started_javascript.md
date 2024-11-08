@@ -189,7 +189,7 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
     const companyDetails = { name: "Tech Solutions", founded: 2010 }; // Object
     const departments = ["HR", "Engineering", "Sales"]; // Array
 
-    // there isn't any right or wrong, you can log it at once like in the example or seperated the console.log for every variable.
+    // There isn't any right or wrong, you can log it at once like in the example or seperate the console.log for every variable.
     console.log(typeof companyName, typeof companyAge, typeof isActive, typeof companyRevenue, typeof noValue, typeof companyDetails, typeof departments);
   ```
 </details>
