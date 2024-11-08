@@ -135,6 +135,8 @@ JavaScript has several data types that can be classified into two categories: **
    ```javascript
    const emptyValue = null; // null
 
+--
+
 #### Non-Primitive Data Types
 
 1. **Object**
