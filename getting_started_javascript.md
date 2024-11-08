@@ -104,22 +104,35 @@ JavaScript has several data types that can be classified into two categories: **
    - Example: `"Hello, world!"`, `'1234'`
 
    ```javascript
-   const greeting = "Hello, world!"; // String
+   const greeting = "Hello, world!"; // string
 
 2. **Number**
    - Used for any type of number, including integers and floating-point numbers.
    - Example: `42`, `3.14`, `-100`
 
    ```javascript
-   const age = 30; // Number
-   const pi = 3.14; // Floating-point Number
+   const age = 30; // number
+   const pi = 3.14; // floating-point number
 
 3. **Boolean**
    - Represents a logical entity and can have only two values: true or false. Useful for conditional statements and logic.
    - Example: `true`, `false`
 
    ```javascript
-   const isMember = true; // Boolean
+   const isMember = true; // boolean
 
+4. **Undefined**
+   - A variable that has been declared but has not yet been assigned a value is automatically undefined.
+   - Example: `undefined`
+
+   ```javascript
+   let score; // undefined
+
+5. **Null**
+   - Represents an explicitly empty or non-existent value. Unlike undefined, null is assigned intentionally.
+   - Example: `null`
+
+   ```javascript
+   const emptyValue = null; // null
 
 
