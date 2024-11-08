@@ -178,6 +178,10 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
 
   ```javascript
     // Example solution
+
+    /*there isn't any right or wrong, you can declare the variables with variable type ( var, let, const).
+    * Keep in mind that using var isn't recommended anymore.
+    */
     const companyName = "Tech Solutions"; // String
     const companyAge = 10; // Number
     const isActive = true; // Boolean
@@ -185,7 +189,8 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
     const noValue = null; // Null
     const companyDetails = { name: "Tech Solutions", founded: 2010 }; // Object
     const departments = ["HR", "Engineering", "Sales"]; // Array
-    
+
+    // there isn't any right or wrong, you can log it at once like in the example or seperated the console.log for every variable.
     console.log(typeof companyName, typeof companyAge, typeof isActive, typeof companyRevenue, typeof noValue, typeof companyDetails, typeof departments);
   ```
 </details>
