@@ -159,8 +159,9 @@ JavaScript has several data types that can be classified into two categories: **
 If you don't know how to log the type, google it. If you can't find anything click on the hint.
 <details>
     <summary>Click for a hint</summary>
-    ```javascript
+
     //to get the type of a variable, you can use the typeof operator. Example:
     let test = 1;
     console.log(typeof test);
+    
 </details>
