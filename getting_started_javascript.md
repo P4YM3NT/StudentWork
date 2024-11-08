@@ -179,8 +179,8 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
   ```javascript
     // Example solution
 
-    /*there isn't any right or wrong, you can declare the variables with variable type ( var, let, const).
-    * Keep in mind that using var isn't recommended anymore.
+    /* There isn't any right or wrong, you can declare the variables with every variable type ( var, let, const).
+    *  Keep in mind that using var isn't recommended anymore.
     */
     const companyName = "Tech Solutions"; // String
     const companyAge = 10; // Number
