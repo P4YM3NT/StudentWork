@@ -3,8 +3,8 @@
 Welcome to the JavaScript Basics guide! This document is designed to help you learn the fundamental concepts of JavaScript in the context of Node.js. Each section includes explanations, code examples, and exercises to reinforce your learning. 
 
 ## Table of Contents
-1. [Introduction](#Introduction)
-2. [Variables](#Variables)
+1. [Introduction](##Introduction)
+2. [Variables](##Variables)
 3. [Data Types](#Data-Types)
 4. [Operators](#Operators)
 5. [Control Structures](#Control-Structures)
