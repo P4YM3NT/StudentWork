@@ -653,3 +653,117 @@ do {
     }    
   ```
 </details>
+
+---
+
+<br>
+
+---
+
+## 6. Functions
+
+In JavaScript, a `function` is a reusable block of code that performs a specific `task` or calculates a value. Functions allow you to organize your code, `reduce` repetition, and make it easier to `understand` and `maintain`.
+
+### Anatomy of a Function
+
+A basic function has these components:
+
+1. `Function keyword`: This signals the start of a function.
+2. `Name`: This identifies the function so it can be called elsewhere in your code.
+3. `Parameters`: Variables listed inside parentheses after the function name. They act as placeholders for values that will be passed to the function when it is called.
+4. `Function body`: This is enclosed in curly braces { } and contains the code that runs when the function is called.
+5. `Return statement (optional)`: This specifies the output or result of the function. When the function is called, it will return this value.
+
+### Syntax
+
+Here is the general syntax for defining a function in JavaScript:
+
+```javascript
+function greet(name) {
+    // Code to execute comes here
+    let result = name;
+
+    return result; // Optional: sends back a value
+}
+```
+
+- `greet`: The name of the function.
+- `name`: Parameter Value passed into the function, used within its code. You can name parameters however you like.
+- `return`: (Optional) Sends back a value to where the function was called.
+
+### Calling a function
+
+To use (or “call”) the function, you write the function name followed by parentheses, including any arguments that match the parameters.
+
+```javascript
+console.log(functionName("Luca")); // Outputs: Hello, Luca!
+```
+
+### Types of Functions
+
+In JavaScript, there are several ways to define functions:
+
+1. Function Declarations:
+```javascript
+function greet(name) {
+    let result = name;
+
+    return result;
+}
+```
+
+2. Function Expressions:
+```javascript
+const greeting = function greet(name) {
+    let result = name;
+
+    return result;
+}
+```
+
+3. Arrow Functions (ES6):
+```javascript
+const greeting = (name) => {
+    let result = name;
+
+    return result;
+}
+
+### Exercise
+
+1. Write a function called square that takes a number as an argument and returns the square of that number.
+2. Write it as an Arrow Function (ES6)
+3. Print both functions with the parameter `5`
+
+### Example Code
+
+<details>
+  <summary>Click to see the solution</summary>
+
+  ```javascript
+    // Example solution
+
+    // Exercise 1
+    function square(num1) {
+        let result = num1 * num1
+        console.log("Function Declaration", result)
+
+        return result;
+    }
+
+    //Exercise 2
+    const square = (num1) => {
+        let result = num1 * num1
+        console.log("Arrow Function", result)
+
+        return result;
+    }
+  ```
+</details>
+
+---
+
+<br>
+
+---
+
