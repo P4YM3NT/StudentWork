@@ -842,27 +842,40 @@ Let's put this into practice by creating a `user` object and writing a function 
   ```
 </details>
 
-<details>
-    <summary></summary>
-</details>
+### Adding and Deleting Properties
+
+#### 1. Inserting (or Adding) Properties
+To insert a new key-value pair into an object, you can use:
+
+- **Dot notation**: `object.key = value`
+- **Bracket notation**: `object["key"] = value`
+
+#### 2. Deleting Properties
+To delete a property, use the `delete` keyword:
+
+- `delete object.key`
+- `delete object["key"]`
+
+#### Example of Adding and Deleting Properties
+
 ```javascript
-// Step 1: Create the user object
 const user = {
     name: "Alice",
     age: 25,
     isStudent: true
 };
 
-// Step 2: Write a function to print each property
-function printUserProperties(obj) {
-    for (let key in obj) {
-        console.log(`${key}: ${obj[key]}`);
-    }
-}
+// Adding a new property
+user.country = "Germany"; // Dot notation
+user["hobby"] = "Reading"; // Bracket notation
 
-printUserProperties(user);
+console.log(user);
+// Output: { name: "Alice", age: 25, isStudent: true, country: "Germany", hobby: "Reading" }
 
-// Expected output:
-// name: Alice
-// age: 25
-// isStudent: true
+// Deleting a property
+delete user.hobby; // Removes the 'hobby' property
+delete user["country"]; // Removes the 'country' property
+
+console.log(user);
+// Output: { name: "Alice", age: 25, isStudent: true }
+```
