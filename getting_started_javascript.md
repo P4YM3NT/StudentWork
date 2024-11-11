@@ -695,14 +695,22 @@ function greet(name) {
 }
 ```
 
+- Use Case: Use function declarations when you don’t need to store the function in a variable and want the function to be available throughout the scope.
+- Named Functions: Function declarations must have a name, which makes them ideal for functions that need to be called multiple times.
+- Not for Dynamic Assignments: Function declarations cannot be assigned to variables or passed around like function expressions, so they are better when the function's primary role is to be invoked by name.
+
 2. Function Expressions:
 ```javascript
-const greeting = function greet(name) {
+const greeting = function(name) {
     let result = name;
 
     return result;
 }
 ```
+
+- Use Case: Use function expressions when you need to store a function in a variable, pass it as an argument, or return it from another function.
+- Flexible Invocation: Since they are stored in variables, function expressions can be invoked only after they are assigned to a variable, unlike function declarations that can be used before they are defined.
+- Can Be Assigned to Variables or Objects: You can store function expressions in variables, arrays, or even objects for later use.
 
 3. Arrow Functions (ES6):
 ```javascript
@@ -712,6 +720,10 @@ const greeting = (name) => {
     return result;
 }
 ```
+
+- Arrow Functions are `nameless functions`, they should be used when it's not neccessary to use the function again. ( You need a name to call a function )
+- Use arrow functions for short, single-use functions, especially in callbacks (.map(), .filter(), ...), where you don’t need a named function.
+- You don't need to safe them in a const like in the example.
 
 ### Exercise
 
@@ -747,7 +759,7 @@ const greeting = (name) => {
 
 ---
 
-## Objects
+## 7. Objects
 
 In JavaScript, **objects** are collections of related data organized as key-value pairs. They are powerful because they allow us to represent real-world entities with properties and values. Objects can store not only values (like numbers and strings) but also functions, making them flexible and central in JavaScript programming.
 
