@@ -696,7 +696,7 @@ function greet(name) {
 To use (or “call”) the function, you write the function name followed by parentheses, including any arguments that match the parameters.
 
 ```javascript
-console.log(functionName("Luca")); // Outputs: Hello, Luca!
+console.log(greet("Luca")); // Outputs: Hello, Luca!
 ```
 
 ### Types of Functions
