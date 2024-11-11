@@ -1025,26 +1025,44 @@ Here, map creates a new array where each number from the original array is doubl
     <summary>Click to see the solution</summary>
 
 ```javascript
-// Example combining forEach and map
 
+//Exercise 1
+const fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+
+fruits.forEach(function(fruit) {
+  console.log(fruit.toUpperCase());
+});
+
+//Exercise 2
 const numbers = [1, 2, 3, 4, 5];
 
-// Using forEach to print each doubled number
-console.log("Using forEach:");
-numbers.forEach(function(number) {
-  console.log(number * 2);
+const squaredNumbers = numbers.map(function(number) {
+  return number * number;
 });
 
-// Using map to create a new array of doubled numbers
-console.log("\nUsing map:");
-const doubledNumbers = numbers.map(function(number) {
-  return number * 2;
-});
-console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+console.log(squaredNumbers);
 
-/*
-*In this example, forEach prints each doubled number directly, while map creates a new array with doubled numbers.
-*/
+//Exercise 3
+
+const numbers = [10, 20, 30, 40, 50];
+
+numbers.forEach(function(number, index) {
+  console.log(`Index: ${index}, Value: ${number}`);
+});
+
+//Exercise 4
+const books = [
+  { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
+  { title: "1984", author: "George Orwell" },
+  { title: "To Kill a Mockingbird", author: "Harper Lee" },
+  { title: "Pride and Prejudice", author: "Jane Austen" }
+];
+
+const bookTitles = books.map(function(book) {
+  return book.title;
+});
+
+console.log(bookTitles);
 ```
     
 </details>
