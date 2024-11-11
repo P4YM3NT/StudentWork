@@ -619,6 +619,7 @@ do {
 <details>
     <summary>Example Code</summary>
     ```javascript
+    
     //Exercise 1
     let number = -3;
 
