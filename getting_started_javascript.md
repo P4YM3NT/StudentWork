@@ -915,7 +915,7 @@ const arrayName = [value1, value2, value3, ...];
 
 Here’s an example of an array containing a list of fruits:
 
-```
+```javascript
 const fruits = ["apple", "banana", "cherry"];
 
 console.log(fruits[0]);  // Outputs: apple
