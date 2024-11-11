@@ -940,19 +940,18 @@ Let’s put this into practice by working with your favorite colors:
     <summary>Click to see the solution</summary>
     
 ```javascript
+// Step 1: Create an array of favorite colors
+const favoriteColors = ["blue", "green", "purple"];
 
-     // Step 1: Create an array of favorite colors
-    const favoriteColors = ["blue", "green", "purple"];
-    
-    // Step 2: Use a loop to print each color
-    for (let i = 0; i < favoriteColors.length; i++) {
-        console.log(favoriteColors[i]);
-    }
-    
-    // Expected output:
-    // blue
-    // green
-    // purple    
+// Step 2: Use a loop to print each color
+for (let i = 0; i < favoriteColors.length; i++) {
+    console.log(favoriteColors[i]);
+}
+
+// Expected output:
+// blue
+// green
+// purple    
 ```
 </details>
 
