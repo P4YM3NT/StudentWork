@@ -101,8 +101,6 @@ You should see Hello, Node.js! in the console.
 
 ### 5. Nodemon & Script
 
-### 5. Nodemon & Script
-
 Nodemon is a tool that helps automatically restart your Node.js server whenever changes are detected in your code. This is very useful during development.
 
 #### Install Nodemon
