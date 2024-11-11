@@ -408,13 +408,11 @@ There are several types of control structures:
 1. Conditional Statements (`if`, `else if`, `else`, `switch`)
 2. Loops ( `for`, `while`, `do...while`)
 
-<br>
-
 ### Conditional Statements
 
 Conditional statements allow us to execute code only when certain conditions are true.
 
-#### If Statement
+#### 1. If Statement
 
 The `if` statement checks a `condition`, and if the condition is `true`, it executes the code inside the block. If the condition is `false`, it skips to the `next` part of the code.
 
@@ -436,5 +434,62 @@ if (age >= 18) {
     console.log("Minor");
 }
 ```
+#### 2. If...Else Statement
 
+The `if...else` statement provides an alternative action if the initial condition is `false`.
 
+#### Syntax
+
+```javascript
+if (condition) {
+    // Code to execute if condition is true
+} else {
+    // Code to execute if condition is false
+}
+```
+#### Example
+
+```javascript
+let temperature = -5;
+if (temperature > 0) {
+    console.log("Above freezing");
+} else {
+    console.log("Below freezing");
+}
+```
+
+#### If...Else If...Else Statement
+
+With `if...else if...else`, we can check multiple conditions in sequence. Once a condition is `true`, it will execute the corresponding block and ignore the rest.
+
+#### Syntax
+
+```
+javascript
+if (condition) {
+    // Code to execute if condition is true
+} else if (secondCondition) {
+    // Code to execute if condition is false and secondCondition is true
+} else if (thirdCondition) {
+    // Code to execute if condition and secondCondition are false, but thirdCondition is true
+} else {
+    // Code to execute if all previous conditions are false
+}
+```
+
+#### Example
+
+```
+javascript
+let temperature = 30;
+
+if (temperature > 30) {
+    console.log("It's hot outside.");
+} else if (temperature >= 20 && temperature <= 30) {
+    console.log("The weather is warm.");
+} else if (temperature >= 10 && temperature < 20) {
+    console.log("It's a bit chilly.");
+} else {
+    console.log("It's cold outside.");
+}
+```
