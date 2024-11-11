@@ -3,17 +3,17 @@
 Welcome to the JavaScript Basics guide! This document is designed to help you learn the fundamental concepts of JavaScript in the context of Node.js. Each section includes explanations, code examples, and exercises to reinforce your learning. 
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Variables](#variables)
-3. [Data Types](#data-types)
-4. [Operators](#operators)
-5. [Control Structures](#control-structures)
+1. [Introduction](#Introduction)
+2. [Variables](#Variables)
+3. [Data Types](#Data-Types)
+4. [Operators](#Operators)
+5. [Control Structures](#Control-Structures)
     - [If Statements](#if-statements)
     - [Switch Statements](#switch-statements)
 6. [Loops](#loops)
-7. [Functions](#functions)
-8. [Objects](#objects)
-9. [Arrays](#arrays)
+7. [Functions](#Functions)
+8. [Objects](#Objects)
+9. [Arrays](#Arrays)
 10. [Modules and Exports](#modules-and-exports)
 
 ---
@@ -125,7 +125,7 @@ var isActive = true;    // Function-scoped (legacy)
 
 ---
 
-## 3. Data Types
+## 3. Data-Types
 
 JavaScript has several data types that can be classified into two categories: **primitive** and **non-primitive**. Primitive types are immutable and include `strings`, `numbers`, `booleans`, `undefined`, `null`. Non-primitive types (also known as reference types) include objects and arrays.
 
