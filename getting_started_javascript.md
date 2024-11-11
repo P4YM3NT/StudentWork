@@ -1033,6 +1033,7 @@ fruits.forEach(function(fruit) {
   console.log(fruit.toUpperCase());
 });
 
+
 //Exercise 2
 const numbers = [1, 2, 3, 4, 5];
 
@@ -1042,13 +1043,14 @@ const squaredNumbers = numbers.map(function(number) {
 
 console.log(squaredNumbers);
 
-//Exercise 3
 
+//Exercise 3
 const numbers = [10, 20, 30, 40, 50];
 
 numbers.forEach(function(number, index) {
   console.log(`Index: ${index}, Value: ${number}`);
 });
+
 
 //Exercise 4
 const books = [
