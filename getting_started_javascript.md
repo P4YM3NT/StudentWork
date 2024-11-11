@@ -377,21 +377,7 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
   ```
 </details>
 
-Exercise 2: Modulus and Odd/Even Check
-Declare a variable number and assign it a random integer.
-Use the modulus operator (%) to check if the number is even or odd.
-Log whether the number is "Even" or "Odd".
-Example Solution:
 
-javascript
-Code kopieren
-let number = 17;
-
-if (number % 2 === 0) {
-    console.log("Even");
-} else {
-    console.log("Odd");
-}
 
 --- 
 
@@ -616,12 +602,15 @@ do {
 4. Create a while loop that prints "Hello" 5 times.
 
 ### Example Code
+
 <details>
-    <summary>Click to see the solution</summary>
-    ```javascript
-    
-        //Exercise 1
-        let number = -3;
+  <summary>Click to see the solution</summary>
+
+  ```javascript
+    // Example solution
+
+    // Exercise 1
+    let number = -3;
 
         if (number > 0) {
         console.log("Positive");
@@ -662,6 +651,5 @@ do {
             console.log("Hello");
             count++;
         }
-    ```
+  ```
 </details>
-
