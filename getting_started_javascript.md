@@ -728,6 +728,7 @@ const greeting = (name) => {
 
     return result;
 }
+```
 
 ### Exercise
 
