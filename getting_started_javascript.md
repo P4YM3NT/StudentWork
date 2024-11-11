@@ -612,44 +612,44 @@ do {
     // Exercise 1
     let number = -3;
 
-        if (number > 0) {
-        console.log("Positive");
-        } else if (number < 0) {
-            console.log("Negative");
-        } else {
-            console.log("Zero");
-        }
-    
-        //Exercise 2
-        let day = "Saturday";
-    
-        switch (day) {
-            case "Monday":
-            case "Tuesday":
-            case "Wednesday":
-            case "Thursday":
-            case "Friday":
-                console.log("Weekday");
-                break;
-            case "Saturday":
-            case "Sunday":
-                console.log("Weekend");
-                break;
-            default:
-                console.log("Invalid day");
-        }
-    
-        //Exercise 3
-        for (let i = 1; i <= 10; i++) {
-            console.log(i);
-        }
-    
-        //Exercise 4
-        let count = 0;
-    
-        while (count < 5) {
-            console.log("Hello");
-            count++;
-        }
+    if (number > 0) {
+    console.log("Positive");
+    } else if (number < 0) {
+        console.log("Negative");
+    } else {
+        console.log("Zero");
+    }
+
+    //Exercise 2
+    let day = "Saturday";
+
+    switch (day) {
+        case "Monday":
+        case "Tuesday":
+        case "Wednesday":
+        case "Thursday":
+        case "Friday":
+            console.log("Weekday");
+            break;
+        case "Saturday":
+        case "Sunday":
+            console.log("Weekend");
+            break;
+        default:
+            console.log("Invalid day");
+    }
+
+    //Exercise 3
+    for (let i = 1; i <= 10; i++) {
+        console.log(i);
+    }
+
+    //Exercise 4
+    let count = 0;
+
+    while (count < 5) {
+        console.log("Hello");
+        count++;
+    }    
   ```
 </details>
