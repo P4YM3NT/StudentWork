@@ -879,3 +879,77 @@ Let's put this into practice by creating a `user` object and writing a function 
     */
   ```
 </details>
+
+---
+
+<br>
+
+---
+
+## 8. Arrays
+
+Arrays are ordered collections of values that allow us to store multiple values in a single variable. They are a core part of JavaScript and are especially useful when dealing with lists of data, such as lists of names, numbers, or objects. Each item in an array has a specific position, known as its index, which starts at `0`.
+
+### Description
+
+An array in JavaScript can store any data type, including strings, numbers, objects, and even other arrays (nested arrays). Arrays are flexible and provide many built-in methods to manipulate and access the stored values. 
+
+Arrays are particularly useful when we need to:
+
+- Organize and manage data in a structured way.
+- Access specific elements by their index.
+- Iterate over a set of values, such as through loops.
+
+### Syntax
+
+To create an array, we use square brackets `[ ]` and list the values inside, separated by commas.
+
+```javascript
+const arrayName = [value1, value2, value3, ...];
+```
+
+- Index: Each value in the array has an index, starting at 0 for the first element.
+- Length: The number of elements in an array is known as its length, accessed using arrayName.length.
+
+### Example
+
+Here’s an example of an array containing a list of fruits:
+
+```
+const fruits = ["apple", "banana", "cherry"];
+console.log(fruits[0]);  // Outputs: apple
+console.log(fruits[1]);  // Outputs: banana
+console.log(fruits[2]);  // Outputs: cherry
+Array values: "apple", "banana", "cherry"
+
+// Indexes: 0, 1, 2
+// Accessing elements: We use the index to access elements in the array, such as fruits[0] for "apple".
+```
+
+### Exercises
+
+Let’s put this into practice by working with your favorite colors:
+
+1. Create an array of your favorite colors.
+2. Write a loop to print each color in the array.
+
+### Example Code
+
+<details>
+    <summary>Click to see the solution</summary>
+    
+```javascript
+     // Step 1: Create an array of favorite colors
+        const favoriteColors = ["blue", "green", "purple"];
+        
+        // Step 2: Use a loop to print each color
+        for (let i = 0; i < favoriteColors.length; i++) {
+            console.log(favoriteColors[i]);
+        }
+        
+        // Expected output:
+        // blue
+        // green
+        // purple    
+```
+</details>
