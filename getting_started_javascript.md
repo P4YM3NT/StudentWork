@@ -954,3 +954,7 @@ Let’s put this into practice by working with your favorite colors:
         // purple    
 ```
 </details>
+
+---
+
+# Now you should be ready for the Adressbook! Good luck :)
