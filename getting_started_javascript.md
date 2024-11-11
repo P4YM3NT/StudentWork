@@ -917,11 +917,12 @@ Here’s an example of an array containing a list of fruits:
 
 ```
 const fruits = ["apple", "banana", "cherry"];
+
 console.log(fruits[0]);  // Outputs: apple
 console.log(fruits[1]);  // Outputs: banana
 console.log(fruits[2]);  // Outputs: cherry
-Array values: "apple", "banana", "cherry"
 
+// Array values: "apple", "banana", "cherry"
 // Indexes: 0, 1, 2
 // Accessing elements: We use the index to access elements in the array, such as fruits[0] for "apple".
 ```
