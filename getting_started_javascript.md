@@ -393,3 +393,48 @@ if (number % 2 === 0) {
     console.log("Odd");
 }
 
+--- 
+
+<br>
+
+---
+
+## 5. Control Structures
+
+Control structures allow us to control the flow of a program. By using them, we can decide which code should be executed based on conditions or repeat actions under specific circumstances.
+
+There are several types of control structures:
+
+1. Conditional Statements (`if`, `else if`, `else`, `switch`)
+2. Loops ( `for`, `while`, `do...while`)
+
+<br>
+
+### Conditional Statements
+
+Conditional statements allow us to execute code only when certain conditions are true.
+
+#### If Statement
+
+The `if` statement checks a `condition`, and if the condition is `true`, it executes the code inside the block. If the condition is `false`, it skips to the `next` part of the code.
+
+#### Syntax
+
+```javascript
+if (condition) {
+    // Code to execute if condition is true
+}
+```
+
+#### Example
+
+```javascript
+let age = 20;
+if (age >= 18) {
+    console.log("Adult");
+} else {
+    console.log("Minor");
+}
+```
+
+
