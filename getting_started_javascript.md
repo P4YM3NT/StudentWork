@@ -1048,6 +1048,7 @@ console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
 ```
     
 </details>
+
 ---
 
 ### Next Chapter: Create an Adressbook
