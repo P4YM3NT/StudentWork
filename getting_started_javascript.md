@@ -615,5 +615,52 @@ do {
 3. Use a for loop to print numbers from 1 to 10.
 4. Create a while loop that prints "Hello" 5 times.
 
+### Example Code
+<details>
+    <summary>Example Code</summary>
+    ```javascript
+    //Exercise 1
+    let number = -3;
 
+    if (number > 0) {
+    console.log("Positive");
+    } else if (number < 0) {
+        console.log("Negative");
+    } else {
+        console.log("Zero");
+    }
+
+    //Exercise 2
+    let day = "Saturday";
+
+    switch (day) {
+        case "Monday":
+        case "Tuesday":
+        case "Wednesday":
+        case "Thursday":
+        case "Friday":
+            console.log("Weekday");
+            break;
+        case "Saturday":
+        case "Sunday":
+            console.log("Weekend");
+            break;
+        default:
+            console.log("Invalid day");
+    }
+
+    //Exercise 3
+    for (let i = 1; i <= 10; i++) {
+        console.log(i);
+    }
+
+    //Exercise 4
+    let count = 0;
+
+    while (count < 5) {
+        console.log("Hello");
+        count++;
+    }
+    ```
+</details>
 
