@@ -28,6 +28,38 @@ In this guide, you'll cover the basics of JavaScript specifically for back-end d
 
 <br>
 
+## Prerequisit
+
+#### Print
+
+In JavaScript, `console.log` is a method used to print or output information to the browser's console or local terminal (nodejs). It’s very helpful for `debugging`, as it lets developers check the values of variables, test expressions, and track the flow of a `program`.
+
+#### How to Use console.log
+
+To use `console.log`, simply call it with the information you want to display. For example:
+
+```javascript
+console.log("Hello, World!")
+```
+
+This line will print `Hello, World!` to the console.
+
+You can also print variables and set a string infront of it for better understanding.
+
+```javascript
+let age = 18;
+
+// print variables only
+console.log(age);
+
+//print variables with a string infront.
+console.log("My Age is: ", age);
+```
+
+Keep in mind to set a comma after the string, otherwise it would generate an error.
+
+---
+
 ## 2. Variables
 
 Variables store data values that we can use and manipulate in our code. There are 3 different types that can be used `var`, `let`, `const`.
