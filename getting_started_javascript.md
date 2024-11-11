@@ -768,3 +768,101 @@ const greeting = (name) => {
 
 ---
 
+## Objects
+
+In JavaScript, **objects** are collections of related data organized as key-value pairs. They are powerful because they allow us to represent real-world entities with properties and values. Objects can store not only values (like numbers and strings) but also functions, making them flexible and central in JavaScript programming.
+
+### Structure of an Object
+
+An object is defined with curly braces `{ }`, and each property inside consists of:
+
+- **Key**: The name of the property (e.g., `brand`, `model`, `year`).
+- **Value**: The value assigned to the property, which could be any data type (e.g., strings, numbers, or even functions).
+
+### Example
+
+Here’s an example of an object representing a car:
+
+```javascript
+const car = {
+    brand: "Toyota",
+    model: "Corolla",
+    year: 2020
+};
+```
+
+- **Keys**: `brand`, `model`, and `year`
+- **Values**: `"Toyota"`, `"Corolla"`, and `2020`
+
+To access the values of an object, we use either **dot notation** (`car.brand`) or **bracket notation** (`car["brand"]`).
+
+### Accessing Object Properties
+
+```javascript
+console.log(car.brand);  // Outputs: Toyota
+console.log(car["year"]); // Outputs: 2020
+```
+
+### Exercise
+
+Let's put this into practice by creating a `user` object and writing a function to print each property.
+
+1. Create an object called `user` with the properties `name`, `age`, and `isStudent`.
+2. Write a function to print each property of the `user` object.
+
+### Example Code
+
+<details>
+  <summary>Click to see the solution</summary>
+
+  ```javascript
+    // Example solution
+
+    // Step 1: Create the user object
+    const user = {
+        name: "Alice",
+        age: 25,
+        isStudent: true
+    };
+    
+    // Step 2: Write a function to print each property
+    function printUserProperties(obj) {
+        for (let key in obj) {
+            console.log(`${key}: ${obj[key]}`);
+        }
+    }
+    
+    printUserProperties(user);
+    
+    /* Expected output:
+    * name: Alice
+    * age: 25
+    * isStudent: true
+    */
+  ```
+</details>
+
+<details>
+    <summary></summary>
+</details>
+```javascript
+// Step 1: Create the user object
+const user = {
+    name: "Alice",
+    age: 25,
+    isStudent: true
+};
+
+// Step 2: Write a function to print each property
+function printUserProperties(obj) {
+    for (let key in obj) {
+        console.log(`${key}: ${obj[key]}`);
+    }
+}
+
+printUserProperties(user);
+
+// Expected output:
+// name: Alice
+// age: 25
+// isStudent: true
