@@ -137,6 +137,12 @@ npm run dev
 
 Now, Nodemon will automatically restart your app whenever changes are made to your files. So everytime you save your file (Shortkut: ctrl + S) your app will restart automatically.
 
+<br>
+
+---
+
+<br>
+
 ### 6. Additional Resources
 Node.js Documentation: https://nodejs.org/docs/latest/api/
 npm Documentation: https://docs.npmjs.com/
