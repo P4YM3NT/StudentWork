@@ -535,3 +535,85 @@ switch (day) {
 ```
 
 In this example, if `day` is `"Monday"`, it will print "Start of the work week!" The `break` keyword prevents the execution from moving to the next case. The `default` case runs if none of the other cases match.
+
+<br>
+
+### 3. Loops
+
+`Loops` let us execute a block of code multiple times until a specific `condition` is met.
+
+#### For Loop
+
+The `for` loop is ideal when you know the exact number of iterations you want.
+
+#### Syntax
+```javascript
+for (initialization; condition; increment) {
+    // Code to repeat
+}
+```
+
+Increment is the `part` that changes the loop variable `each` time the loop runs. 
+
+#### Example
+```javascript
+for (let i = 0; i < 5; i++) {
+    console.log(i); // Outputs numbers from 0 to 4
+}
+```
+
+As we have learned before, the `++` operator will increment `i` by 1.
+
+<br>
+
+#### While Loop
+
+The `while` loop is useful when you `don’t` know the exact number of repetitions but need to loop until a condition becomes false.
+
+#### Syntax
+```javascript
+while (condition) {
+    // Code to repeat
+}
+```
+
+#### Example
+```javascript
+let count = 0;
+while (count < 3) {
+    console.log("Count is:", count);
+    count++;
+}
+```
+<br>
+
+#### Do...While Loop
+
+The `do...while` loop guarantees the code runs at least `once`, as it checks the condition after executing the block.
+
+#### Syntax
+```javascript
+do {
+    // Code to execute at least once
+} while (condition);
+```
+
+#### Example
+```javascript
+let number = 5;
+do {
+    console.log("Number is:", number);
+    number--;
+} while (number > 0);
+```
+<br>
+
+### Exercises
+
+1. Write an if statement to check if a number is positive, negative, or zero.
+2. Write a switch statement to categorize a day as a "Weekday" or "Weekend".
+3. Use a for loop to print numbers from 1 to 10.
+4. Create a while loop that prints "Hello" 5 times.
+
+
+
