@@ -794,9 +794,9 @@ const car = {
 - **Keys**: `brand`, `model`, and `year`
 - **Values**: `"Toyota"`, `"Corolla"`, and `2020`
 
-To access the values of an object, we use either **dot notation** (`car.brand`) or **bracket notation** (`car["brand"]`).
-
 ### Accessing Object Properties
+
+To access the values of an object, we use either **dot notation** (`car.brand`) or **bracket notation** (`car["brand"]`).
 
 ```javascript
 console.log(car.brand);  // Outputs: Toyota
