@@ -803,6 +803,44 @@ console.log(car.brand);  // Outputs: Toyota
 console.log(car["year"]); // Outputs: 2020
 ```
 
+### Adding and Deleting Properties
+
+#### 1. Inserting (or Adding) Properties
+To insert a new key-value pair into an object, you can use:
+
+- **Dot notation**: `object.key = value`
+- **Bracket notation**: `object["key"] = value`
+
+#### 2. Deleting Properties
+To delete a property, use the `delete` keyword:
+
+- `delete object.key`
+- `delete object["key"]`
+
+#### Example of Adding and Deleting Properties
+
+```javascript
+const user = {
+    name: "Alice",
+    age: 25,
+    isStudent: true
+};
+
+// Adding a new property
+user.country = "Germany"; // Dot notation
+user["hobby"] = "Reading"; // Bracket notation
+
+console.log(user);
+// Output: { name: "Alice", age: 25, isStudent: true, country: "Germany", hobby: "Reading" }
+
+// Deleting a property
+delete user.hobby; // Removes the 'hobby' property
+delete user["country"]; // Removes the 'country' property
+
+console.log(user);
+// Output: { name: "Alice", age: 25, isStudent: true }
+```
+
 ### Exercise
 
 Let's put this into practice by creating a `user` object and writing a function to print each property.
@@ -841,41 +879,3 @@ Let's put this into practice by creating a `user` object and writing a function 
     */
   ```
 </details>
-
-### Adding and Deleting Properties
-
-#### 1. Inserting (or Adding) Properties
-To insert a new key-value pair into an object, you can use:
-
-- **Dot notation**: `object.key = value`
-- **Bracket notation**: `object["key"] = value`
-
-#### 2. Deleting Properties
-To delete a property, use the `delete` keyword:
-
-- `delete object.key`
-- `delete object["key"]`
-
-#### Example of Adding and Deleting Properties
-
-```javascript
-const user = {
-    name: "Alice",
-    age: 25,
-    isStudent: true
-};
-
-// Adding a new property
-user.country = "Germany"; // Dot notation
-user["hobby"] = "Reading"; // Bracket notation
-
-console.log(user);
-// Output: { name: "Alice", age: 25, isStudent: true, country: "Germany", hobby: "Reading" }
-
-// Deleting a property
-delete user.hobby; // Removes the 'hobby' property
-delete user["country"]; // Removes the 'country' property
-
-console.log(user);
-// Output: { name: "Alice", age: 25, isStudent: true }
-```
