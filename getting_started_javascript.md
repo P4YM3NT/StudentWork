@@ -18,15 +18,11 @@ Welcome to the JavaScript Basics guide! This document is designed to help you le
 
 ---
 
-<br>
-
 ## 1. Introduction
 
 In this guide, you'll cover the basics of JavaScript specifically for back-end development with Node.js. Basic concepts in JavaScript are universal, but we’ll skip aspects focused on the browser and DOM manipulation at the moment.
 
 ---
-
-<br>
 
 ## Prerequisit
 
@@ -127,11 +123,7 @@ var isActive = true;    // Function-scoped (legacy)
 ```
 </details>
 
-<br>
-
 ---
-
-<br>
 
 ## 3. Data Types
 
@@ -234,11 +226,7 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
   ```
 </details>
 
-<br>
-
 ---
-
-<br>
 
 ## 4. Operators
 
@@ -270,6 +258,8 @@ Arithmetic operators are used to perform `mathematical` calculations.
    // 4 % 2 would be rest 0
    // 5 % 2 would be rest 1
 
+<br>
+
 ### Assignment Operators
 Assignment operators `assign` values to variables.
 
@@ -292,6 +282,8 @@ Assignment operators `assign` values to variables.
 5. **Division Assigment (`/=`)**:  Divides the variable by a value.
    ```javascript
    x /= 6; // Equivalent to x = x / 6; x is now 4
+
+<br>
 
 ### Comparison Operators
 Comparison operators are used to compare values and return a boolean result `true` or `false`.
@@ -327,6 +319,8 @@ Comparison operators are used to compare values and return a boolean result `tru
 8. **Less Than or Equal (`<=`)**: Checks if the left value is less than or equal to the right.
    ```javascript
    console.log(5 <= 10); // true
+
+<br>
 
 ### Logical Operators
 Logical operators are used to combine multiple `boolean expressions`.
@@ -376,46 +370,7 @@ If you don't know how to log the `type`, google it. If you can't find anything, 
   ```
 </details>
 
-<br>
-
-### Exercise 2: Modulus and Odd/Even Check
-
-1. Declare a `variable number` and assign it a `random` integer.
-2. Use the `modulus` operator (%) to check if the number is `even` or `odd`.
-
-    - `Addition`
-    - `Subtraction`
-    - `Multiplication`
-    - `Division`
-    - `Modulus`
-3. Log whether the number is `Even` or `Odd`.    
-
-### Example Code
-
-<details>
-  <summary>Click to see the solution</summary>
-
-  ```javascript
-    // Example solution
-
-    let a = 8;
-    let b = 4;
-
-    console.log(a + b); // Addition
-    console.log(a - b); // Subtraction
-    console.log(a * b); // Multiplication
-    console.log(a / b); // Division
-    console.log(a % b); // Modulus
-  ```
-</details>
-
-
-
 --- 
-
-<br>
-
----
 
 ## 5. Control Structures
 
@@ -688,10 +643,6 @@ do {
 
 ---
 
-<br>
-
----
-
 ## 6. Functions
 
 In JavaScript, a `function` is a reusable block of code that performs a specific `task` or calculates a value. Functions allow you to organize your code, `reduce` repetition, and make it easier to `understand` and `maintain`.
@@ -793,10 +744,6 @@ const greeting = (name) => {
     }
   ```
 </details>
-
----
-
-<br>
 
 ---
 
@@ -911,10 +858,6 @@ Let's put this into practice by creating a `user` object and writing a function 
     */
   ```
 </details>
-
----
-
-<br>
 
 ---
 
