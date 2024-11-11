@@ -458,14 +458,13 @@ if (temperature > 0) {
 }
 ```
 
-#### If...Else If...Else Statement
+#### 3. If...Else If...Else Statement
 
 With `if...else if...else`, we can check multiple conditions in sequence. Once a condition is `true`, it will execute the corresponding block and ignore the rest.
 
 #### Syntax
 
-```
-javascript
+```javascript
 if (condition) {
     // Code to execute if condition is true
 } else if (secondCondition) {
@@ -479,8 +478,7 @@ if (condition) {
 
 #### Example
 
-```
-javascript
+```javascript
 let temperature = 30;
 
 if (temperature > 30) {
