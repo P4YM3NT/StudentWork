@@ -491,3 +491,47 @@ if (temperature > 30) {
     console.log("It's cold outside.");
 }
 ```
+
+<br>
+
+### 2. The Switch Statement
+
+The `switch` statement is useful when you have `multiple` possible values for a variable and want to execute different code based on each `value`.
+
+#### Syntax
+
+```javascript
+switch (expression) {
+    case value1:
+        // Code for value1
+        break;
+    case value2:
+        // Code for value2
+        break;
+    // Add more cases as needed
+    default:
+        // Code if none of the cases match
+}
+```
+
+#### Example
+```javascript
+let day = "Monday";
+
+switch (day) {
+    case "Monday":
+        console.log("Start of the work week!");
+        break;
+    case "Friday":
+        console.log("Almost the weekend!");
+        break;
+    case "Saturday":
+    case "Sunday":
+        console.log("It's the weekend!");
+        break;
+    default:
+        console.log("It's a regular weekday.");
+}
+```
+
+In this example, if `day` is `"Monday"`, it will print "Start of the work week!" The `break` keyword prevents the execution from moving to the next case. The `default` case runs if none of the other cases match.
