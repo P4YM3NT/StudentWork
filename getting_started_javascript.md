@@ -86,8 +86,6 @@ var isActive = true;    // Function-scoped (legacy)
 2. Declare a constant called `yearFounded` with a numeric value.
 3. Try reassigning `yearFounded` and note what happens.
 4. Declare a `let` variable named `companyLocation` and assign it a string value representing a city.
-5. Inside an `if` block, try reassigning `companyLocation` to a different city and log the result both inside and outside the block.
-6. Declare a `var` variable called `isPublic` and assign it a boolean value (`true` or `false`). Test its scope by logging it inside and outside a function.
 
 ### Example Code
 
