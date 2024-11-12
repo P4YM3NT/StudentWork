@@ -1,4 +1,5 @@
 # JavaScript Basics for Node.js Development
+# JavaScript Basics for Node.js Development
 
 Welcome to the JavaScript Basics guide! This document is designed to help you learn the fundamental concepts of JavaScript in the context of Node.js. Each section includes explanations, code examples, and exercises to reinforce your learning. 
 
@@ -1068,5 +1069,182 @@ console.log(bookTitles);
 </details>
 
 ---
+
+## 10 Understanding Imports and Exports in JavaScript
+
+### Introduction
+
+In JavaScript, `import` and `export` are used to handle code modularity. They allow you to split your code into smaller, reusable pieces (modules), which helps keep your codebase clean, organized, and easy to maintain.
+
+- **Export** is used to share parts of your code from one file with others.
+- **Import** is used to bring in code from another file or a third-party library.
+
+### What is an Export?
+
+In JavaScript, you can export variables, functions, or entire objects to make them available in other files. There are two types of exports: **named exports** and **default exports**.
+
+#### Named Export
+
+Named exports allow you to export multiple items from a file. You can then import them by the same name.
+
+##### Syntax
+
+```javascript
+// In file: math.js
+
+export const add = (a, b) => a + b;
+export const subtract = (a, b) => a - b;
+```
+In the example above, add and subtract are named exports from the file math.js.
+
+#### Default Export
+A default export allows you to export a single value from a module, and it can be imported with any name.
+
+##### Syntax
+```javascript
+// In file: math.js
+
+const multiply = (a, b) => a * b;
+export default multiply;
+```
+In this example, multiply is the default export from math.js. You can name it anything when you import it.
+
+### What is an Import?
+To use the exported values from another file, we use the import statement.
+
+#### Importing Named Exports
+To import named exports, you need to use curly braces {} and specify the name of the exported items.
+
+##### Syntax
+```javascript
+// In file: app.js
+
+import { add, subtract } from './math.js';
+
+console.log(add(2, 3)); // Output: 5
+console.log(subtract(5, 2)); // Output: 3
+```
+In the example above, we import add and subtract from math.js and use them in app.js.
+
+#### Importing Default Exports
+When importing a default export, you don't need to use curly braces. You can name the import whatever you like.
+
+##### Syntax
+```javascript
+// In file: app.js
+
+import multiply from './math.js';
+
+console.log(multiply(2, 3)); // Output: 6
+```
+Here, multiply is the default export from math.js, and you can name it anything (though we kept the same name here).
+
+### Importing External Libraries (e.g., prompt-sync)
+JavaScript also allows you to import external libraries using import. For example, you can use the library prompt-sync to get user input in the terminal.
+
+To use this library, you first need to install it using npm (Node Package Manager).
+
+Installation
+Run the following command in your terminal to install prompt-sync:
+
+```bash
+npm install prompt-sync
+```
+
+#### Importing and Using prompt-sync
+Once the package is installed, you can import it and use it in your JavaScript file.
+
+##### Syntax
+```javascript
+// In file: app.js
+
+import promptSync from 'prompt-sync';
+
+// Initialize prompt-sync
+const prompt = promptSync();
+
+// Asking for user input
+const name = prompt('What is your name? ');
+
+console.log(`Hello, ${name}!`);
+```
+In the example above, we import prompt-sync using import, then initialize it as prompt. This allows us to prompt the user for input in the terminal.
+
+#### Combining Named and Default Imports
+You can combine default and named imports from the same file.
+
+##### Syntax
+```javascript
+// In file: app.js
+
+import multiply, { add, subtract } from './math.js';
+
+console.log(multiply(2, 3)); // Output: 6
+console.log(add(2, 3)); // Output: 5
+console.log(subtract(5, 2)); // Output: 3
+```
+
+### Example Project: Simple Calculator with User Input
+Step 1: Create a calculator.js file with the following code:
+```javascript
+// In file: calculator.js
+
+export const add = (a, b) => a + b;
+export const subtract = (a, b) => a - b;
+export const multiply = (a, b) => a * b;
+export const divide = (a, b) => a / b;
+```
+Step 2: Create an app.js file to import and use the functions and get user input:
+```javascript
+// In file: app.js
+
+import promptSync from 'prompt-sync';
+import { add, subtract, multiply, divide } from './calculator.js';
+
+// Initialize prompt-sync
+const prompt = promptSync();
+
+// Get user input for numbers
+const num1 = parseFloat(prompt('Enter first number: '));
+const num2 = parseFloat(prompt('Enter second number: '));
+
+// Get user choice for operation
+const operation = prompt('Choose an operation (add, subtract, multiply, divide): ');
+
+// Perform operation based on input
+let result;
+if (operation === 'add') {
+  result = add(num1, num2);
+} else if (operation === 'subtract') {
+  result = subtract(num1, num2);
+} else if (operation === 'multiply') {
+  result = multiply(num1, num2);
+} else if (operation === 'divide') {
+  result = divide(num1, num2);
+} else {
+  console.log('Invalid operation');
+}
+
+console.log(`The result is: ${result}`);
+```
+Step 3: Run the app.js file to interact with the user:
+```bash
+node app.js
+```
+### Exercises
+1. Create a module for string operations
+    - Create a file called stringOperations.js that exports functions for:
+    - Converting a string to uppercase
+    - Checking if a string contains a substring
+    - Reversing a string
+
+#### Conclusion
+Exporting allows you to share variables, functions, or objects from one file.
+Importing allows you to use those shared items in other files.
+You can export and import items in many ways, including named exports and default exports.
+External libraries can be imported to use in your projects, such as prompt-sync for user input.
+By using imports and exports, you can write more modular and organized code, making it easier to maintain and reuse!
+
+## Happy coding! 🚀
 
 ### Next Chapter: Create an Adressbook
