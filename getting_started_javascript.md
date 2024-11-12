@@ -1,5 +1,4 @@
 # JavaScript Basics for Node.js Development
-# JavaScript Basics for Node.js Development
 
 Welcome to the JavaScript Basics guide! This document is designed to help you learn the fundamental concepts of JavaScript in the context of Node.js. Each section includes explanations, code examples, and exercises to reinforce your learning. 
 
