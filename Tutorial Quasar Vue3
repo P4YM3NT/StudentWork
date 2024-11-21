@@ -17,7 +17,7 @@ npm install -g @quasar/cli
 
 #### Create a New Project
 ```bash
-quasar create address-book-app
+npm init quasar 
 ```
 Follow the prompts to set up your project (choose Vue 3 and other defaults).
 
@@ -133,7 +133,60 @@ export default [
 
 ---
 
-## 5. Pages
+## 5. Pages in Quasar
+
+In Quasar, pages represent the main content views that are displayed in the application based on the routing. Here's how you can create a functional Address Book page `(AddressBook.vue)` in Quasar, using the provided code as an example.
+
+#### Address Book Page (`AddressBook.vue`)
+The `AddressBook.vue` page is designed to:
+
+1. Fetch a list of contacts from the backend.
+2. Display these contacts in a list format.
+3. Include a button to navigate to an "Add Contact" form.
+
+```javascript
+<template>
+  <q-page padding>
+    <!-- Add Contact Button -->
+    <q-btn label="Add Contact" color="primary" @click="navigateToAdd" />
+
+    <!-- Contacts List -->
+    <q-list bordered padding>
+      <q-item v-for="contact in contacts" :key="contact.id">
+        <q-item-section>
+          <div><strong>{{ contact.name }}</strong></div>
+          <div>{{ contact.email }}</div>
+          <div>{{ contact.phone }}</div>
+        </q-item-section>
+      </q-item>
+    </q-list>
+  </q-page>
+</template>
+
+<script setup>
+import { ref, onMounted } from 'vue';
+import { useContactsStore } from 'src/stores/contacts';
+import { useRouter } from 'vue-router';
+
+const router = useRouter(); // Access Vue Router for navigation
+const store = useContactsStore(); // Access the Pinia store for contacts
+const contacts = ref([]); // Local state to hold contacts
+
+// Fetch contacts from the backend when the component mounts
+const fetchContacts = async () => {
+  await store.fetchContacts(); // Calls the Pinia action
+  contacts.value = store.contacts; // Updates the local state
+};
+
+// Lifecycle hook to load data
+onMounted(fetchContacts);
+
+// Navigation function to redirect to the Add Contact page
+const navigateToAdd = () => {
+  router.push('/add');
+};
+</script>
+```
 
 
 
